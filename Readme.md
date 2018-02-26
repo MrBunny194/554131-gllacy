@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Nikita Volobuev](https://up.htmlacademy.ru/htmlcss/20/user/554131).
-* Наставник: `Неизвестно`.
+* Наставник: [Гоша Егорян](https://htmlacademy.ru/profile/id85633).
 
 ---
 
