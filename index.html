@@ -26,17 +26,25 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search-link">
-            Поиск
-            <!-- Здесь будет форма -->
+          <li>
+            <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+              <label for="search-form-search" class="visually-hidden">Что ищем?</label>
+              <input id="search-form-search" type="text" name="search" placeholder="Что ищем?">
+            </form>
           </li>
-          <li class="login-link">
-            Вход
-            <!-- Здесь будет форма -->
+          <li>
+            <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+              <label for="login-form-email" class="visually-hidden">Электронная почта</label>
+              <input id="login-form-email" type="email" name="email" placeholder="Электронная почта">
+
+              <label for="login-form-password" class="visually-hidden">Пароль</label>
+              <input id="login-form-password" type="password" name="password" placeholder="Пароль">
+
+              <button class="button" type="submit">Войти</button>
+            </form>
           </li>
           <li class="basket-link">
             Пусто
-            <!-- Здесь будет форма -->
           </li>
         </ul>
       </nav>
@@ -46,9 +54,24 @@
     <main class="container">
       <section class="slider">
         <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-        <img src="img/head-ice-cream-1.png" width="647" height="584" alt="Мороженое">
-        <!-- В слайдере три изображения -->
-        <button class="button">Давайте оба!</button>
+        <form class="form-slider" method="post" action="https://echo.htmlacademy.ru">
+          <label for="form-slider-ice-cream-1">
+            <img src="img/head-ice-cream-1.png" width="647" height="584" alt="Мороженое">
+          </label>
+          <input id="form-slider-ice-cream-1" type="radio" name="ice-cream" value="ice-cream-1">
+
+          <label for="form-slider-ice-cream-2">
+            <img src="img/head-ice-cream-2.png" width="644" height="582" alt="Мороженое">
+          </label>
+          <input id="form-slider-ice-cream-2" type="radio" name="ice-cream" value="ice-cream-2">
+
+          <label for="form-slider-ice-cream-3">
+            <img src="img/head-ice-cream-3.png" width="639" height="582" alt="Мороженое">
+          </label>
+          <input id="form-slider-ice-cream-3" type="radio" name="ice-cream" value="ice-cream-3">
+
+          <button class="button" type="submit">Давайте оба!</button>
+        </form>
       </section>
 
       <ul class="advertising">
@@ -108,6 +131,11 @@
         </article>
         <section>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
+            <label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
+            <input id="subscribe-form-email" type="email" name="email" placeholder="Электронная почта">
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </section>
       </section>
 
@@ -139,5 +167,20 @@
       </a>
       <p class="footer-academy-link">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </footer>
+
+    <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+      <h3>Мы обязательно вам ответим!</h3>
+
+      <label for="feedback-form-user-name" class="visually-hidden">Как вас зовут?</label>
+      <input id="feedback-form-user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+
+      <label for="feedback-form-user-email" class="visually-hidden">Ваша почта для ответа?</label>
+      <input id="feedback-form-user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
+
+      <label for="feedback-form-user-comment" class="visually-hidden">Напишите что-нибудь...</label>
+      <textarea id="feedback-form-user-comment" name="user-comment" placeholder="Напишите что-нибудь..."></textarea>
+
+      <button class="button" type="submit">Отправить</button>
+    </form>
   </body>
 </html>
