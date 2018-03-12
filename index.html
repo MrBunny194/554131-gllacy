@@ -5,7 +5,6 @@
     <title>Глейси</title>
   </head>
   <body>
-
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -25,14 +24,18 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <ul class="user-navigation">
+      </nav>
+      <nav class="user-navigation">
+        <ul>
           <li>
+            <button class="button">Поиск</button>
             <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
               <label for="search-form-search" class="visually-hidden">Что ищем?</label>
               <input id="search-form-search" type="text" name="search" placeholder="Что ищем?">
             </form>
           </li>
           <li>
+            <button class="button">Вход</button>
             <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
               <label for="login-form-email" class="visually-hidden">Электронная почта</label>
               <input id="login-form-email" type="email" name="email" placeholder="Электронная почта">
@@ -42,6 +45,8 @@
 
               <button class="button" type="submit">Войти</button>
             </form>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
           </li>
           <li class="basket-link">
             Пусто
@@ -133,14 +138,13 @@
       </section>
 
       <section class="wrapper">
-        <h2 class="visually-hidden">Блог</h2>
         <article>
           <h3>Новое в нашем блоге</h3>
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
 
-        <h2 class="visually-hidden">Рассылка</h2>
         <section>
+          <h2 class="visually-hidden">Рассылка</h2>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
             <label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
@@ -176,6 +180,7 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
 
+      <h2 class="visually-hidden">Копирайт</h2>
       <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="#" alt="Логотип HTML Academy">
       </a>
@@ -184,6 +189,7 @@
 
     <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
       <h3>Мы обязательно вам ответим!</h3>
+      <button class="button">Закрыть</button>
 
       <label for="feedback-form-user-name" class="visually-hidden">Как вас зовут?</label>
       <input id="feedback-form-user-name" type="text" name="user-name" placeholder="Как вас зовут?">
