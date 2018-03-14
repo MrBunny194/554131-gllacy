@@ -15,14 +15,14 @@ a {
 }
 
 .visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   clip: rect(0 0 0 0);
-   overflow: hidden; 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-navigation {
@@ -44,8 +44,8 @@ a {
 }
 
 .items a {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .items a:hover,
@@ -54,8 +54,8 @@ a {
 .footer-link a:focus,
 .footer-academy-link a:hover,
 .footer-academy-link a:focus {
-    color: #f6b5a5;
-    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+  color: #f6b5a5;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .site-navigation a:hover,
@@ -90,7 +90,7 @@ a {
 }
 
 .user-navigation a:hover,
-.user-navigation a:focus, 
+.user-navigation a:focus,
 .wrapper a:hover,
 .wrapper a:focus {
   color: #e84d37;
@@ -119,7 +119,8 @@ a {
 
 
 .user-navigation input,
-.subscribe-form input {
+.subscribe-form input,
+.feedback-form input {
   box-sizing: border-box;
   padding-left: 14px;
   display: inline-block;
@@ -137,17 +138,20 @@ a {
   width: 310px;
 }
 .subscribe-form input {
-    width: 370px;
+  font-size: 16px;
+  width: 370px;
 }
 
 .user-navigation input:hover,
-.subscribe-form input:hover {
+.subscribe-form input:hover,
+.feedback-form input:hover {
   border: 1px solid #c7c6c5;
   box-shadow:  0 0 0 1px #c7c6c5;
 }
 
 .user-navigation input:focus,
-.subscribe-form input:focus {
+.subscribe-form input:focus,
+.feedback-form input:focus {
   border: 1px solid #8fbdec;
   box-shadow:  0 0 0 1px #8fbdec;
 }
@@ -167,95 +171,106 @@ a {
 }
 
 .about-us p {
-    font-size: 24px;
-    line-height: 30px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .about-us li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .wrapper h3 {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .wrapper a {
-    font-size: 24px;
-    line-height: 30px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .subscribe p {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-} 
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
 
 .contacts
 {
-    font-size: 14px;
-    line-height: 20px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .contacts span {
-    font-size: 18px;
-    line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer-link li {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
 }
 
 .footer-link li:first-child {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .footer-academy-link {
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 300;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
 }
 
 .items img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .items p {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 700;
-    color: #ffffff;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .items span {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .footer-link {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-academy-link {
-    text-align: right;
+  text-align: right;
+}
+
+.feedback-form h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.feedback-form input {
+  font-size: 16px;
+  width: 267px;
 }
 
 /*.button-enter {*/
-  /*padding-top: 15px;*/
-  /*padding-right: 25px;*/
-  /*padding-bottom: 15px;*/
-  /*padding-left: 25px;*/
-  /*background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);*/
-  /*box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);*/
-  /*border-radius: 25px;*/
-  /*border: none;*/
-  /*color: white;*/
+/*padding-top: 15px;*/
+/*padding-right: 25px;*/
+/*padding-bottom: 15px;*/
+/*padding-left: 25px;*/
+/*background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);*/
+/*box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);*/
+/*border-radius: 25px;*/
+/*border: none;*/
+/*color: white;*/
 /*}*/
 
 
