@@ -24,21 +24,54 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li class="search-link">
-          Поиск
-          <!-- Здесь будет форма -->
+    </nav>
+    <nav class="user-navigation">
+      <ul>
+        <li>
+          <button class="button">Поиск</button>
+          <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+            <label for="search-form-search" class="visually-hidden">Что ищем?</label>
+            <input id="search-form-search" type="text" name="search" placeholder="Что ищем?">
+          </form>
         </li>
-        <li class="login-link">
-          Вход
-          <!-- Здесь будет форма -->
+        <li>
+          <button class="button">Вход</button>
+          <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+            <label for="login-form-email" class="visually-hidden">Электронная почта</label>
+            <input id="login-form-email" type="email" name="email" placeholder="Электронная почта">
+
+            <label for="login-form-password" class="visually-hidden">Пароль</label>
+            <input id="login-form-password" type="password" name="password" placeholder="Пароль">
+
+            <button class="button" type="submit">Войти</button>
+          </form>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
         </li>
         <li class="basket-link">
           2 товара
-          <!-- Здесь будет форма -->
+          <table>
+            <tr>
+              <td><button class="button">Удалить</button></td>
+              <td><img src="img/basket-ice-cream-1.png" width="33" height="33" alt="Фото мороженного"></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х 200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td><button class="button">Удалить</button></td>
+              <td><img src="img/basket-ice-cream-2.png" width="33" height="33" alt="Фото мороженного"></td>
+              <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
+              <td>1,5 кг х 300 руб.</td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <p>Итого: 750 руб.</p>
+          <a class="basket-button" href="#">Оформить заказ</a>
         </li>
       </ul>
     </nav>
+
     <p><span>c 10 до 20, ежедневно </span>8 812 450-25-25</p>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
@@ -47,8 +80,71 @@
     </ul>
   </header>
   <main>
+    <h1 class="visually-hidden">Каталог продукции</h1>
     <h2>Сливочное мороженое</h2>
-    <!-- Здесь будет форма -->
+    <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+      <label>
+        Сортировка:
+        <select>
+          <option value="по популярности">по популярности</option>
+          <option value="сначала недорогие">сначала недорогие</option>
+          <option value="сначала дорогие">сначала дорогие</option>
+          <option value="по жирности">по жирности</option>
+        </select>
+      </label>
+
+      <label>
+        Цена: 100 руб. – 500 руб.
+        <input type="range" min="100" max="500" step="1" value="100, 300">
+      </label>
+
+
+      <div class="fat-content">
+        Жирность:
+        <label>
+          <input type="radio" name="fat-content" value="0">
+          0%
+        </label>
+        <label>
+          <input type="radio" name="fat-content" value="до 10">
+          до 10%
+        </label>
+        <label>
+          <input type="radio" name="fat-content" value="до 30">
+          до 30%
+        </label>
+        <label>
+          <input type="radio" name="fat-content" value="выше 30">
+          выше 30%
+        </label>
+      </div>
+
+      <div class="fillers">
+        Наполнители:
+        <label>
+          <input type="checkbox" name="fillers" value="chocolate" checked>
+          шоколадные
+        </label>
+        <label>
+          <input type="checkbox" name="fillers" value="sugar" checked>
+          сахарные присыпки
+        </label>
+        <label>
+          <input type="checkbox" name="fillers" value="fruits">
+          фрукты
+        </label>
+        <label>
+          <input type="checkbox" name="fillers" value="syrup">
+          сиропы
+        </label>
+        <label>
+          <input type="checkbox" name="fillers" value="jam">
+          джемы
+        </label>
+      </div>
+
+      <button class="button" type="submit">Применить</button>
+    </form>
     <ul class="items">
       <li>
         <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Апельсиновое мороженое">
@@ -124,28 +220,33 @@
       </li>
     </ul>
     <ul class="pagination">
-      <li></li>
+      <li><a href="#"></a></li>
       <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-      <li></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#"></a></li>
     </ul>
   </main>
   <footer>
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
     <ul class="footer-social">
       <li><a class="social-button" href="#">Твиттер</a></li>
       <li><a class="social-button" href="#">Инстаграм</a></li>
       <li><a class="social-button" href="#">Фейсбук</a></li>
       <li><a class="social-button" href="#">Вконтакте</a></li>
     </ul>
+
+    <h2 class="visually-hidden">Дополнительная информация</h2>
     <ul class="footer-link">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
+
+    <h2 class="visually-hidden">Копирайт</h2>
     <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
       <img src="#" alt="Логотип HTML Academy">
     </a>
