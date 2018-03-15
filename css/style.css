@@ -38,7 +38,8 @@ a {
 .site-navigation a,
 .items a,
 .footer-link a,
-.footer-academy-link a {
+.footer-academy-link a,
+.breadcrumbs a {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -53,7 +54,9 @@ a {
 .footer-link a:hover,
 .footer-link a:focus,
 .footer-academy-link a:hover,
-.footer-academy-link a:focus {
+.footer-academy-link a:focus,
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
   color: #f6b5a5;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
@@ -261,6 +264,67 @@ a {
   width: 267px;
 }
 
+.current {
+  background-color: #d07058;
+  text-decoration: none;
+}
+
+.basket-link p {
+  color: #323232;
+}
+
+.basket-link td {
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket-link span {
+  color: #999999;
+}
+
+.result {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.breadcrumbs {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.pagination a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter-form,
+.filter-form .sort {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.filter-form label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.container-catalog h2 {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
 /*.button-enter {*/
 /*padding-top: 15px;*/
 /*padding-right: 25px;*/
