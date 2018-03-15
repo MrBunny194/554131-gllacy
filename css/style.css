@@ -56,7 +56,9 @@ a {
 .footer-academy-link a:hover,
 .footer-academy-link a:focus,
 .breadcrumbs a:hover,
-.breadcrumbs a:focus {
+.breadcrumbs a:focus,
+.pagination a:hover,
+.pagination a:focus {
   color: #f6b5a5;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
