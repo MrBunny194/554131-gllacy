@@ -9,8 +9,8 @@ body {
   color: #323232;
   background-color: #849d8f;
 
-  min-width: 1200px;
-  min-height: 2416px;
+  width: 1200px;
+  height: 2416px;
 }
 
 a {
@@ -34,7 +34,7 @@ a {
 
 .main-header li,
 .container li,
-.footer li {
+.main-footer li {
   list-style: none;
 }
 
@@ -42,6 +42,7 @@ a {
 .items a,
 .footer-link a,
 .main-footer p a,
+.footer-social a,
 .breadcrumbs a {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -58,6 +59,8 @@ a {
 .footer-link a:focus,
 .main-footer p a:hover,
 .main-footer p a:focus,
+.footer-social a:hover,
+.footer-social a:focus,
 .breadcrumbs a:hover,
 .breadcrumbs a:focus,
 .pagination a:hover,
@@ -351,56 +354,109 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-
 /* ----- header ----- */
 .main-header {
-
-  background-color: rgba(255, 255, 255, 0.4);
-
   display: flex;
   position: relative;
   justify-content: space-between;
+  height: 75px;
+  /* background-color: rgba(255, 255, 25, 0.4); */
 }
 
-.main-header p {
+.main-header-logo {
   position: absolute;
-  top: 75px;
-  right: 27px;
+  margin-left: 27px;
+  margin-top: 10px;
+
+}
+
+.site-navigation {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 205px;
+  margin-top: 32px;
+}
+
+.user-navigation {
+  width: 262;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgba(255, 25, 255, 0.4); */
 }
 
 .main-header span {
   display: block;
 }
-
-
-.main-navigation {
-  background-color: rgba(255, 255, 25, 0.4);
-  display: flex;
-}
-
-.site-navigation {
+.main-header p {
+  position: absolute;
   padding: 0;
-  display: flex;
-  margin-top: 32px;
-  margin-left: 24px;
-}
-
-.site-navigation li {
-  margin-right: 28px;
-}
-
-.user-navigation {
-  background-color: rgba(255, 25, 25, 0.4);
-  display: flex;
-}
-
-
-
-/* ----- header-end ----- */
+  margin: 0;
+  top: 75px;
+  right: 27px;
+} 
 
 .slider {
+  margin-top: 10px;
+  display: flex;
+  height: 560;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider h2 {
+  top: 342px;
+  position: absolute;
+  width: 670px;
+}
+
+.slider .button {
+  position: absolute;
+  top: 550px;
+  width: 279px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: none;
+
+  color: #ffffff;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  border-radius: 50px;
+  outline: none;
+
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.advertising {
+  display: flex;
+  margin-top: -10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.advertising li:first-child {
+  background-color: #600114;
+  background-image: url("../img/raspberry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 560px; 
+  margin-right: 10px;
+}
+
+.advertising li:last-child {
+  flex-basis: 560px; 
+  background-color: #000000;
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+}
+
+
+
+.items {
   display: flex;
 }
+/* ----- header-end ----- */
 
 
 
