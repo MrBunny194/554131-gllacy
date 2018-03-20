@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+
+  <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo.svg" alt="Логотип Глейси">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
         </a>
         <ul class="site-navigation">
           <li>
@@ -28,8 +29,9 @@
           <li><a href="#">О компании</a></li>
         </ul>
       </nav>
-      <nav class="user-navigation">
-        <ul>
+
+      <nav>
+        <ul class="user-navigation">
           <li>
             <button class="button">Поиск</button>
             <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
@@ -48,8 +50,8 @@
 
               <button class="button button-enter" type="submit">Войти</button>
             </form>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
+            <a class="login-form-link" href="#">Забыли пароль?</a>
+            <a class="login-form-link" href="#">Новая регистрация</a>
           </li>
           <li class="basket-link">
             Пусто
@@ -63,28 +65,29 @@
 
     <main class="container">
       <section class="slider">
-        <form class="form-slider" method="post" action="https://echo.htmlacademy.ru">
+        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+        <img src="img/head-ice-cream-1.png" width="647" height="584" alt="Мороженое">
+        <!--<form class="form-slider" method="post" action="https://echo.htmlacademy.ru">-->
+          <!--<h2>Крем-брюле и пломбир с малиновым джемом</h2>-->
+          <!--<label for="form-slider-ice-cream-1">-->
+            <!--<img src="img/head-ice-cream-1.png" width="647" height="584" alt="Мороженое">-->
+          <!--</label>-->
+          <!--<input id="form-slider-ice-cream-1" type="radio" name="ice-cream" value="ice-cream-1">-->
 
-          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <label for="form-slider-ice-cream-1">
-            <img src="img/head-ice-cream-1.png" width="647" height="584" alt="Мороженое">
-          </label>
-          <input id="form-slider-ice-cream-1" type="radio" name="ice-cream" value="ice-cream-1">
+          <!--<h2>Шоколадный пломбир и лимонный сорбет</h2>-->
+          <!--<label for="form-slider-ice-cream-2">-->
+            <!--<img src="img/head-ice-cream-2.png" width="644" height="582" alt="Мороженое">-->
+          <!--</label>-->
+          <!--<input id="form-slider-ice-cream-2" type="radio" name="ice-cream" value="ice-cream-2">-->
 
-          <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <label for="form-slider-ice-cream-2">
-            <img src="img/head-ice-cream-2.png" width="644" height="582" alt="Мороженое">
-          </label>
-          <input id="form-slider-ice-cream-2" type="radio" name="ice-cream" value="ice-cream-2">
+          <!--<h2>Пломбир с помадкой и клубничный щербет</h2>-->
+          <!--<label for="form-slider-ice-cream-3">-->
+            <!--<img src="img/head-ice-cream-3.png" width="639" height="582" alt="Мороженое">-->
+          <!--</label>-->
+          <!--<input id="form-slider-ice-cream-3" type="radio" name="ice-cream" value="ice-cream-3">-->
 
-          <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <label for="form-slider-ice-cream-3">
-            <img src="img/head-ice-cream-3.png" width="639" height="582" alt="Мороженое">
-          </label>
-          <input id="form-slider-ice-cream-3" type="radio" name="ice-cream" value="ice-cream-3">
-
-          <button class="button" type="submit">Давайте оба!</button>
-        </form>
+          <!--<button class="button" type="submit">Давайте оба!</button>-->
+        <!--</form>-->
       </section>
 
       <h2 class="visually-hidden">Акция</h2>
@@ -190,24 +193,24 @@
       <p class="footer-academy-link">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </footer>
 
-    <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
-      <h3>Мы обязательно вам ответим!</h3>
-      <button class="button">Закрыть</button>
+    <!--<form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">-->
+      <!--<h3>Мы обязательно вам ответим!</h3>-->
+      <!--<button class="button">Закрыть</button>-->
 
-      <label for="feedback-form-user-name" class="visually-hidden">Как вас зовут?</label>
-      <input id="feedback-form-user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+      <!--<label for="feedback-form-user-name" class="visually-hidden">Как вас зовут?</label>-->
+      <!--<input id="feedback-form-user-name" type="text" name="user-name" placeholder="Как вас зовут?">-->
 
-      <label for="feedback-form-user-email" class="visually-hidden">Ваша почта для ответа?</label>
-      <input id="feedback-form-user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
+      <!--<label for="feedback-form-user-email" class="visually-hidden">Ваша почта для ответа?</label>-->
+      <!--<input id="feedback-form-user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">-->
 
-      <label for="feedback-form-user-comment" class="visually-hidden">Напишите что-нибудь...</label>
-      <textarea
-        id="feedback-form-user-comment"
-        name="user-comment"
-        placeholder="Напишите что-нибудь..."
-        ></textarea>
+      <!--<label for="feedback-form-user-comment" class="visually-hidden">Напишите что-нибудь...</label>-->
+      <!--<textarea-->
+        <!--id="feedback-form-user-comment"-->
+        <!--name="user-comment"-->
+        <!--placeholder="Напишите что-нибудь..."-->
+        <!--&gt;</textarea>-->
 
-      <button class="button" type="submit">Отправить</button>
-    </form>
+      <!--<button class="button" type="submit">Отправить</button>-->
+    <!--</form>-->
   </body>
 </html>

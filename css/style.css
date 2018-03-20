@@ -8,6 +8,9 @@ body {
   font-weight: 500;
   color: #323232;
   background-color: #849d8f;
+
+  min-width: 1200px;
+  min-height: 2416px;
 }
 
 a {
@@ -120,8 +123,6 @@ a {
   line-height: 60px;
   color: #ffffff;
 }
-
-
 
 .user-navigation input,
 .subscribe-form input,
@@ -327,6 +328,7 @@ a {
   line-height: 41px;
   color: #ffffff;
 }
+
 /*.button-enter {*/
 /*padding-top: 15px;*/
 /*padding-right: 25px;*/
@@ -338,6 +340,67 @@ a {
 /*border: none;*/
 /*color: white;*/
 /*}*/
+
+/* Временно */
+.submenu,
+.search-form,
+.login-form,
+.login-form-link {
+  display: none;
+}
+
+/* ----- Сеточные стили ----- */
+
+
+/* ----- header ----- */
+.main-header {
+
+  background-color: rgba(255, 255, 255, 0.4);
+
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.main-header p {
+  position: absolute;
+  top: 75px;
+  right: 27px;
+}
+
+.main-header span {
+  display: block;
+}
+
+
+.main-navigation {
+  background-color: rgba(255, 255, 25, 0.4);
+  display: flex;
+}
+
+.site-navigation {
+  padding: 0;
+  display: flex;
+  margin-top: 32px;
+  margin-left: 24px;
+}
+
+.site-navigation li {
+  margin-right: 28px;
+}
+
+.user-navigation {
+  background-color: rgba(255, 25, 25, 0.4);
+  display: flex;
+}
+
+
+
+/* ----- header-end ----- */
+
+.slider {
+  display: flex;
+}
 
 
 
