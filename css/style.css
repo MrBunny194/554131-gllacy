@@ -12,9 +12,7 @@ body {
   width: 1200px;
 }
 
-.main-footer,
-.wrapper-before-map,
-.main-header{
+.content-wrapper {
   width: 1146px;
   margin: 0 auto;
 }
@@ -216,11 +214,13 @@ a {
 {
   font-size: 14px;
   line-height: 20px;
+  font-weight: 300;
 }
 
 .contacts span {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 500;
 }
 
 .footer-link li {
@@ -338,18 +338,6 @@ a {
   color: #ffffff;
 }
 
-/*.button-enter {*/
-/*padding-top: 15px;*/
-/*padding-right: 25px;*/
-/*padding-bottom: 15px;*/
-/*padding-left: 25px;*/
-/*background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);*/
-/*box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);*/
-/*border-radius: 25px;*/
-/*border: none;*/
-/*color: white;*/
-/*}*/
-
 /* Временно */
 .submenu,
 .search-form,
@@ -390,7 +378,8 @@ a {
   justify-content: space-between;
 }
 
-.main-header span {
+.main-header span,
+.contacts span {
   display: block;
 }
 
@@ -559,8 +548,112 @@ a {
 
 .map {
   display: flex;
+  flex-direction: column;
   background: #ffffff url("../img/map.jpg");
+  align-items: flex-end;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  padding-right: 27px;
 }
+
+.contacts {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 303px;
+  padding-top: 32px;
+
+}
+
+.contacts p {
+  margin: 0;
+  width: 221px;
+  padding-left: 27px;
+}
+
+.address span {
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
+
+.contacts-phone span {
+  margin-top: 10px;
+  margin-bottom: 11px;
+}
+
+.contacts button {
+  margin-top: 27px;
+  margin-bottom: 29px;
+  width: 252px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-left: 27px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+.main-footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social span {
+  /*display: none;*/
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  flex-wrap: wrap;
+}
+
+/* ----------------------- catalog.html ----------------------- */
+
+.basket-link p {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog .items {
+  flex-wrap: wrap;
+}
+
+.catalog .items li {
+  margin-top: 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.catalog .main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.catalog .main-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);;
+  padding-top: 19px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
