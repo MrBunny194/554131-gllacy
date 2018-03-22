@@ -46,7 +46,6 @@ a {
 .items a,
 .footer-link a,
 .main-footer p a,
-.footer-social a,
 .breadcrumbs a {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -63,8 +62,6 @@ a {
 .footer-link a:focus,
 .main-footer p a:hover,
 .main-footer p a:focus,
-.footer-social a:hover,
-.footer-social a:focus,
 .breadcrumbs a:hover,
 .breadcrumbs a:focus,
 .pagination a:hover,
@@ -615,28 +612,6 @@ a {
   margin-left: 27px;
 }
 
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 19px;
-}
-
-.main-footer ul {
-  padding: 0;
-  margin: 0;
-}
-
-.footer-social span {
-  /*display: none;*/
-}
-
-.footer-link {
-  display: flex;
-  justify-content: space-between;
-  width: 330px;
-  flex-wrap: wrap;
-}
-
 /* ----------------------- catalog.html ----------------------- */
 .header-wrapper {
   display: flex;
@@ -726,11 +701,90 @@ a {
 }
 
 
+/* ************************** footer ************************** */
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
 
+.main-footer ul {
+  padding: 0;
+  margin: 0;
+}
 
+.social-button-svg {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.social-button-svg path{
+  fill: rgba(230, 235, 233, 0.8)
+}
 
+.social-button-svg:hover g,
+.social-button-svg:hover path,
+.social-button-svg:hover  {
+  fill: rgb(255, 255, 255);
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
 
+.social-button-svg:active g,
+.social-button-svg:active path,
+.social-button-svg:active {
+  fill: rgb(233, 233, 233);
+  border: 3px solid rgba(233, 233, 233, 0.7);
+}
+
+.main-footer .footer-social {
+  display: flex;
+  width: 186px;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+.main-footer ul {
+  padding: 0 0 21px;
+  margin: 17px 0 0;
+
+}
+
+.footer-link {
+  display: flex;
+  justify-content: flex-start;
+  width: 350px;
+  flex-wrap: wrap;
+}
+
+.footer-link li {
+  margin-right: 45px;
+}
+
+.footer-link li:nth-child(2) {
+  margin-left: -15px;
+}
+
+.footer-link li:first-child {
+  position: relative;
+}
+
+.footer-link li:first-child:before {
+  position: absolute;
+  content: url("../img/heart.svg");
+  right: 117px;
+  top: 3px;
+}
+
+.created p {
+  margin-bottom: 25px;
+  margin-top: 0;
+}
 
 
 
