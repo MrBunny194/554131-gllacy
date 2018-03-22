@@ -186,11 +186,15 @@ a {
 .about-us p {
   font-size: 24px;
   line-height: 30px;
+  margin: 0 0 25px;
 }
 
 .about-us li {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 300;
+  width: 477px;
+  margin-bottom: 27px;
 }
 
 .wrapper h3 {
@@ -383,7 +387,7 @@ a {
   display: block;
 }
 
-.main-header p {
+.work-time {
   position: absolute;
   padding: 0;
   margin: 0;
@@ -407,7 +411,7 @@ a {
 .button {
   border: none;
   color: #ffffff;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   border-radius: 50px;
   outline: none;
@@ -496,21 +500,21 @@ a {
   text-align: left;
 }
 
-.about-us,
-.about-us h2,
-.about-us p,
-.about-us ul,
-.about-us li {
-  margin: 0;
-  padding: 0;
-}
-
 .about-us {
   background: #ede2ca url("../img/wafer.jpg");
   margin-top: 40px;
   border-radius: 15px;
   padding-left: 21px;
   padding-right: 34px;
+  padding-top: 27px;
+}
+
+.about-us ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0 0 50px;
 }
 
 .wrapper {
@@ -544,7 +548,29 @@ a {
 .subscribe {
   background: #ffffff url("../img/bg-post.svg");
   background-size: cover;
+
 }
+
+.subscribe p {
+  width: 506px;
+  margin-left: 25px;
+  margin-top: 27px;
+  margin-bottom: 37px;
+}
+
+.subscribe input {
+  margin-left: 25px;
+  margin-right: 12px;
+}
+
+.subscribe .button {
+  width: 128px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 
 .map {
   display: flex;
@@ -612,14 +638,69 @@ a {
 }
 
 /* ----------------------- catalog.html ----------------------- */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
 .basket-link p {
+  display: block;
   padding: 0;
   margin: 0;
 }
 
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 98px 0 0;
+  width: 220px;
+}
+
+.item-header {
+  padding: 0;
+  margin: 45px 0 29px;
+}
+
+.filter-form-top {
+  display: flex;
+}
+
+.filter-form-sort {
+  width: 193px;
+  display: block;
+}
+
+.filter-form-price {
+  display: block;
+  width: 219px;
+}
+
+.filter-form-fat-content {
+  width: 415px;
+}
+
+.filter-form-fillers {
+  margin-top: 18px;
+}
+
+.filter-form-button {
+  margin-left: 15px;
+  width: 148px;
+  background-color: rgba(255, 255, 255, 0.188);
+  border: 2px solid rgb(255, 255, 255);;
+  border-radius: 50px;
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
 .catalog .items {
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog .items li {
@@ -631,9 +712,7 @@ a {
   justify-content: flex-end;
 }
 
-.breadcrumbs {
-  display: flex;
-}
+
 
 .catalog .main-header {
   display: flex;
