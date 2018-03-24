@@ -1,4 +1,5 @@
-.site-wrapper {
+.site-wrapper,
+.catalog{
   margin: 0 auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -10,10 +11,16 @@
 
 .main-header,
 .container,
-.main-footer {
+.main-footer,
+.catalog {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.catalog {
+  background: #849d8f;
+}
+
 
 .content-wrapper {
   max-width: 1146px;
