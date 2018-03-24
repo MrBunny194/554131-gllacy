@@ -1,15 +1,18 @@
-body {
+.site-wrapper {
   margin: 0 auto;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #323232;
-  background-color: #849d8f;
-  min-width: 1200px;
+}
+
+.main-header,
+.container,
+.main-footer {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .content-wrapper {
@@ -75,6 +78,10 @@ a {
   border-bottom: none;
   background-color: #f8f7f4;
   color: #333333;
+  padding: 9px 14px 11px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-right: -14px;
 }
 
 .submenu a {
