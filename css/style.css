@@ -123,6 +123,16 @@ a {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
+.button-search {
+  border-radius: 50%;
+  background-color: #a1b4a9;
+  outline: none;
+  padding: 8px 8px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
 .basket-link,
 .work-time {
   font-size: 14px;
@@ -498,6 +508,7 @@ a {
   width: 262px;
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .main-header span,
