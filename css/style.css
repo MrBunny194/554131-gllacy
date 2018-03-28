@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .site-wrapper,
 .catalog{
   margin: 0 auto;
@@ -25,10 +29,6 @@
 .content-wrapper {
   max-width: 1146px;
   margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
 }
 
 .visually-hidden {
@@ -80,15 +80,51 @@ a {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.menu > a:hover,
+.menu > a:focus {
   border-bottom: none;
   background-color: #f8f7f4;
   color: #333333;
-  padding: 9px 14px 11px;
+  padding: 9px 13px 6px;
   border-radius: 50px;
   box-sizing: border-box;
-  margin-right: -14px;
+  margin-right: -13px;
+  margin-left: -13px;
+}
+
+.menu > a:active {
+  box-shadow: inset 0 2px 2px rgba(51, 51, 51, 1);
+}
+
+/* ************************* Submenu ************************* */
+.submenu {
+  display: none;
+}
+
+.submenu li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-navigation li:hover .submenu {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  margin-top: 11px;
+  left: 158px;
+  border-radius: 5px;
+}
+
+.submenu .submenu-title {
+  border-bottom: 1px solid #d1d0ce;
+  margin-left: 5px;
+  margin-right: 9px;
+  padding: 9px 47px 13px 13px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .submenu a {
@@ -98,13 +134,27 @@ a {
   border-bottom: none;
 }
 
-.submenu a:hover {
-  background-color: #fbded7;
+.submenu li:not(:first-child) {
+  padding-top: 7px;
+  padding-bottom: 7px;;
 }
 
-.submenu a:focus {
+.submenu li:not(:first-child):hover,
+.submenu li:not(:first-child):active {
+  background-color: #fbded7;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.submenu li:last-child:hover,
+.submenu li:last-child:active {
+  border-radius: 0 0 5px 5px;
+}
+
+.submenu li:not(:first-child):active {
   background-color: #f6b5a5;
 }
+/* ************************* Submenu end ************************* */
 
 .user-navigation a,
 .wrapper a {
@@ -127,21 +177,58 @@ a {
   border-radius: 50%;
   background-color: #a1b4a9;
   outline: none;
-  padding: 8px 8px 5px;
+  padding: 7px 7px 4px;
   border: none;
   cursor: pointer;
 }
 
+.button-enter {
+  background-color: #a1b4a9;
+  position: relative;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 7px 9px 6px 48px;
+  border-radius: 50px;
+}
 
-.basket-link,
+.entrance {
+  position: absolute;
+  right: 53px;
+  top: 6px;
+}
+
+.entrance g {
+  fill: #fff;
+}
+
+.basket-link {
+  position: relative;
+  background-color: #a1b4a9;
+  padding-left: 55px;
+  padding-right: 12px;
+  border-radius: 50px;
+  padding-top: 7px;
+}
+
+.basket {
+  position: absolute;
+  right: 81px;
+  top: 6px;
+}
+
+
+.basket-link span,
 .work-time {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   font-weight: 400;
+  text-align: right;
 }
 
-.phone {
+.work-time .phone {
   font-size: 22px;
   line-height: 24px;
 }
@@ -153,6 +240,11 @@ a {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
+/*
+Обратите внимание, что при первом переключении слайдов изображения скачут.
+Это происходит потому, что в этот момент они первый раз загружаются.
+Добавим хак, загрузим изображения для слайдов заранее в скрытых элементах.
+*/
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
@@ -180,30 +272,28 @@ a {
   width: 700px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0 auto 30px;
+  margin-left: 183px;
 }
 
 .slide-button {
   display: inline-block;
-  padding: 12px 44px;
-
-  font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
+  padding: 9px 40px;
+  margin-right: 40px;
+  margin-top: -1px;
+  font-size: 32px;
+  line-height: 44px;
   text-align: center;
   color: #ffffff;
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  border: none;
-  margin-bottom: 25px;
-
+  margin-bottom: 26px;
   cursor: pointer;
 }
 
@@ -221,9 +311,16 @@ a {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(254, 254, 254, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 50%
+}
+
+
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 50px;
   left: 0;
   z-index: 20;
 
@@ -285,14 +382,16 @@ a {
 
 .user-navigation input:hover,
 .subscribe-form input:hover,
-.feedback-form input:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover {
   border: 1px solid #c7c6c5;
   box-shadow:  0 0 0 1px #c7c6c5;
 }
 
 .user-navigation input:focus,
 .subscribe-form input:focus,
-.feedback-form input:focus {
+.feedback-form input:focus,
+.feedback-form textarea:focus {
   border: 1px solid #8fbdec;
   box-shadow:  0 0 0 1px #8fbdec;
 }
@@ -302,13 +401,16 @@ a {
   font-size: 35px;
   line-height: 41px;
   font-weight: 500;
+  padding: 0;
+  margin: -6px 0 -3px -2px;
 }
 
 .advertising p {
   color: #ffffff;
   font-size: 18px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 500;
+  margin-bottom: 38px;
 }
 
 .about-us p {
@@ -329,6 +431,8 @@ a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  margin-bottom: 2px;
+  margin-top: 23px;
 }
 
 .wrapper a {
@@ -383,6 +487,7 @@ a {
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
+
 }
 
 .items span {
@@ -400,17 +505,25 @@ a {
 .feedback-form h3 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 .feedback-form input {
   font-size: 16px;
   width: 267px;
+  margin-bottom: 22px;
 }
 
 .current {
   background-color: #d07058;
   text-decoration: none;
+  padding: 8px 14px 8px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-right: -14px;
+  margin-left: -14px;
 }
 
 .basket-link p {
@@ -421,10 +534,6 @@ a {
   color: #323232;
   font-size: 13px;
   line-height: 16px;
-}
-
-.basket-link span {
-  color: #999999;
 }
 
 .result {
@@ -440,6 +549,11 @@ a {
   font-weight: 300;
 }
 
+.breadcrumbs-link::after {
+  content: "»";
+  margin-left: 8px;
+}
+
 .pagination a {
   color: #ffffff;
   font-size: 16px;
@@ -449,6 +563,14 @@ a {
 .pagination p {
   font-size: 16px;
   line-height: 18px;
+}
+
+.pagination li:first-child {
+  opacity: 0.3;
+}
+
+.pagination-selected {
+
 }
 
 .filter-form,
@@ -470,13 +592,82 @@ a {
   color: #ffffff;
 }
 
-/* Временно */
-.submenu,
 .search-form,
-.login-form,
-.login-form-link {
+.login-form {
   display: none;
 }
+
+.button-search:hover path,
+.button-enter:hover g,
+.button-enter:hover,
+.basket-link:hover g,
+.basket-link:hover span{
+  fill: black;
+  color: black;
+}
+
+.basket-link:hover {
+  cursor: pointer;
+}
+
+/* **************** Search Form **************** */
+
+.search-form {
+  background-color: #f8f7f4;
+  position: absolute;
+  right: 230px;
+  bottom: -86px;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+
+.button-search:focus ~ .search-form,
+.button-search:hover ~ .search-form,
+.search-form:hover,
+.search-form:focus {
+  display: block;
+}
+/* **************** End Search Form **************** */
+
+/* **************** Login Form **************** */
+.login-form {
+  background-color: #f8f7f4;
+  position: absolute;
+  bottom: -218px;
+  right: 121px;
+  padding: 20px;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.login-form input {
+  margin-bottom: 20px;
+}
+
+.login-form .button {
+  width: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.login-form-link-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-enter:focus ~ .login-form,
+.button-enter:hover ~ .login-form,
+.login-form:focus,
+.login-form:hover {
+  display: block;
+}
+/* **************** End Login Form **************** */
 
 /* ----- Сеточные стили ----- */
 .main-header {
@@ -500,20 +691,23 @@ a {
   width: 350px;
   display: flex;
   justify-content: space-between;
-  margin-left: 25px;
-  margin-top: 32px;
+  margin-left: 23px;
+  margin-top: 30px;
 }
 
 .user-navigation {
   width: 262px;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 7px;
+  position: relative;
 }
 
-.main-header span,
-.contacts span {
+.main-header span {
   display: block;
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .work-time {
@@ -521,10 +715,8 @@ a {
   padding: 0;
   margin: 0;
   top: 75px;
-  right: 27px;
+  right: 0;
 }
-
-
 
 .button {
   border: none;
@@ -547,8 +739,6 @@ a {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-
-
 .advertising {
   padding: 0;
   display: flex;
@@ -556,8 +746,6 @@ a {
   justify-content: space-between;
 }
 
-.advertising h3,
-.advertising p,
 .advertising a {
   padding: 0;
   margin: 0;
@@ -577,14 +765,17 @@ a {
 .advertising .button {
   width: 165px;
   text-align: center;
-  padding: 15px 0 13px;
+  padding: 12px 0 12px;
+  margin-top: 5px;
   align-self: flex-end;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
+  font-size: 18px;
 }
 
-.advertising p {
-  padding-top: 21px;
-  margin-bottom: 44px;
+.advertising .button.button-chocolate {
+  padding-right: 12px;
+  padding-left: 11px;
+  padding-bottom: 11px;
 }
 
 .advertising li:first-child {
@@ -605,6 +796,7 @@ a {
 
 .items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
   margin: 39px 0 0;
@@ -612,22 +804,41 @@ a {
 }
 
 .items li {
-  width: 267px;
+  width: 268px;
 }
 
 .items p {
   margin-top: -60px;
   margin-bottom: 17px;
   text-align: left;
+  position: relative;
+}
+
+.item-button {
+  display: none;
+}
+
+.items li:hover {
+  width: 294px;
+  background-color: #fefefe;
+  opacity: 0.2;
+  margin-left: -13px;
+  margin-right: -13px;
+}
+
+.hit:before{
+  position: absolute;
+  content: url("../img/hit.svg");
+  top: -209px;
 }
 
 .about-us {
   background: #ede2ca url("../img/wafer.jpg");
-  margin-top: 40px;
+  margin-top: 39px;
   border-radius: 15px;
-  padding-left: 21px;
+  padding-left: 23px;
   padding-right: 34px;
-  padding-top: 27px;
+  padding-top: 13px;
 }
 
 .about-us ul {
@@ -636,6 +847,39 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 0 0 50px;
+}
+
+.about-us ul {
+  position: relative;
+
+}
+
+.about-us-item-1:before {
+  content: url("../img/ice-cream.svg");
+  position: absolute;
+  left: -5px;
+  top: -15px;
+}
+
+.about-us-item-2:before {
+  content: url("../img/eco.svg");
+  position: absolute;
+  left: -5px;
+  bottom: 70px;
+}
+
+.about-us-item-3:before {
+  content: url("../img/cow.svg");
+  position: absolute;
+  right: 485px;
+  top: -15px;
+}
+
+.about-us-item-4:before {
+  content: url("../img/thermometer.svg");
+  position: absolute;
+  right: 485px;
+  bottom: 70px;
 }
 
 .wrapper {
@@ -663,13 +907,18 @@ a {
 .wrapper article {
   box-sizing: border-box;
   padding-left: 21px;
-  background: #ffffff url("../img/strawberry.jpg") no-repeat left;
+  background: #ffffff url("../img/strawberry.jpg") no-repeat;
+  background-position-x: -52px;
+  background-position-y: -218px;
 }
 
 .subscribe {
-  background: #ffffff url("../img/bg-post.svg");
+  background-color: #f8f7f4;
+  background-clip: content-box;
   background-size: cover;
-
+  border: 5px solid black;
+  border-image-source: url("../img/bg-post.svg");
+  border-image-slice: 5;
 }
 
 .subscribe p {
@@ -696,12 +945,29 @@ a {
 .map {
   display: flex;
   flex-direction: column;
-  background: #ffffff url("../img/map.jpg");
   align-items: flex-end;
   padding-top: 62px;
-  padding-bottom: 62px;
+  padding-bottom: 63px;
   padding-right: 27px;
+  background: #ffffff url("../img/map.jpg") no-repeat;
+  background-position-y: -108px;
+  position: relative;
 }
+
+.map:after {
+  content: url("../img/pin.svg");
+  position: absolute;
+  left: 266px;
+  bottom: 146px;
+}
+
+.map:before {
+  content: url("../img/shadow.png");
+  position: absolute;
+  left: 300px;
+  bottom: 143px;
+}
+
 
 .contacts {
   background-color: #ffffff;
@@ -715,25 +981,32 @@ a {
   margin: 0;
   width: 221px;
   padding-left: 27px;
+  font-weight: 400;
+}
+
+p.address {
+  margin-top: -3px;
 }
 
 .address span {
-  margin-top: 9px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+  display: block;
 }
 
 .contacts-phone span {
-  margin-top: 10px;
-  margin-bottom: 11px;
+  margin: 0;
+  display: block;
+  margin-top: 6px;
 }
 
 .contacts button {
-  margin-top: 27px;
+  margin-top: 25px;
   margin-bottom: 29px;
   width: 252px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 11px;
+  padding-bottom: 14px;
   margin-left: 27px;
+  font-size: 18px;
 }
 
 /* ----------------------- catalog.html ----------------------- */
@@ -796,22 +1069,26 @@ a {
   font-size: 16px;
 }
 
-.catalog .items {
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
 .catalog .items li {
   margin-top: 40px;
 }
 
 .pagination {
   display: flex;
+  width: 190px;
+  justify-content: space-between;
+}
+
+.pagination-wrapper {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: -10px;
   justify-content: flex-end;
 }
 
+.pagination-selected {
 
+}
 
 .catalog .main-header {
   display: flex;
@@ -821,16 +1098,38 @@ a {
 
 .catalog .main-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.3);;
-  padding-top: 19px;
+  padding-top: 34px;
 }
 
+.catalog .basket-link {
+  padding-left: 44px;
+  background-color: #fff;
+}
 
+.catalog .basket-link span {
+  color: #000000;
+}
+
+.filter-form-button:hover {
+  background: rgb(255, 255, 255);
+  color: #000;
+}
+
+.filter-form-button:active {
+  border: none;
+  background: rgb(255, 255, 255);
+  color: #000;
+  box-shadow: inset 0 2px 2px rgba(51, 51, 51, 1);
+  width: 150px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
 /* ************************** footer ************************** */
 
 .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 19px;
+  margin-top: 34px;
 }
 
 .main-footer ul {
@@ -879,11 +1178,13 @@ a {
 
 }
 
-.footer-link {
+.main-footer .footer-link {
   display: flex;
   justify-content: flex-start;
   width: 350px;
   flex-wrap: wrap;
+  padding-left: 49px;
+  padding-bottom: 31px;
 }
 
 .footer-link li {
@@ -911,17 +1212,87 @@ a {
 }
 /* ************************** end footer ************************** */
 
+/* ************************** Feedback Form ************************** */
+.feedback-form {
+  background-color: #f8f7f4;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 338px;
+  right: 360px;
+  width: 429px;
+  padding-right: 24px;
+  padding-left: 25px;
+  border-radius: 9px;
+  z-index: 2;
+}
 
+.feedback-form textarea {
+  resize: none;
+  outline: none;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 105px;
+  margin-bottom: 24px;
+}
 
+.feedback-form .button {
+  width: 139px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  margin-bottom: 26px;
+  padding-right: 7px;
+  align-self: flex-end;
+  font-size: 18px;
+}
 
+.feedback-form-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
 
+.feedback-form-close::before,
+.feedback-form-close::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 21px;
+  height: 2px;
+  background-color: #323232;
+}
 
+.feedback-form-close::before {
+  transform: rotate(45deg);
+}
 
+.feedback-form-close::after {
+  transform: rotate(-45deg);
+}
 
+.modal-overlay {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #323232;
+  opacity: 0.3;
+  z-index: 1;
+}
 
+.feedback-form,
+.modal-overlay {
+  display: none;
+}
 
-
-
-
-
+/* ************************** Feedback Form End ************************** */
 

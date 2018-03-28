@@ -21,7 +21,7 @@
         <li class="menu">
           <a href="#">Каталог</a>
           <ul class="submenu">
-            <li>Новинки</li>
+            <li class="submenu-title">Новинки</li>
             <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
@@ -29,7 +29,7 @@
           </ul>
         </li>
         <li class="menu"><a href="#">Доставка и оплата</a></li>
-        <li class="menu"><a href="#">О компании</a></li>
+        <li class="menu"><a href="#">О Компании</a></li>
       </ul>
     </nav>
     <nav>
@@ -47,7 +47,15 @@
           </form>
         </li>
         <li>
-          <button class="button">Вход</button>
+          <button class="button-enter">
+            <svg class="entrance" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19">
+              <g fill="#000">
+                <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"></path>
+                <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"></path>
+              </g>
+            </svg>
+            <span>Вход</span>
+          </button>
           <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
             <label for="login-form-email" class="visually-hidden">Электронная почта</label>
             <input id="login-form-email" type="email" name="email" placeholder="Электронная почта">
@@ -55,12 +63,25 @@
             <label for="login-form-password" class="visually-hidden">Пароль</label>
             <input id="login-form-password" type="password" name="password" placeholder="Пароль">
 
-            <button class="button button-enter" type="submit">Войти</button>
+            <div class="login-form-wrapper">
+              <div class="login-form-link-wrapper">
+                <a class="login-form-link" href="#">Забыли пароль?</a>
+                <a class="login-form-link" href="#">Новая регистрация</a>
+              </div>
+              <button class="button" type="submit">Войти</button>
+            </div>
           </form>
-          <a class="login-form-link" href="#">Забыли пароль?</a>
-          <a class="login-form-link" href="#">Новая регистрация</a>
         </li>
-        <li class="basket-link">Пусто</li>
+        <li class="basket-link">
+          <svg class="basket" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+            <g fill="#FFF">
+              <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"></path>
+              <circle cx="6.984" cy="18" r="2"></circle>
+              <circle cx="15.984" cy="18" r="2"></circle>
+            </g>
+          </svg>
+          <span>Пусто</span>
+        </li>
       </ul>
     </nav>
     <p class="work-time">c 10 до 20, ежедневно <span class="phone">8 812 450-25-25</span></p>
@@ -102,7 +123,7 @@
         <li>
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="button" href="">Хочу шоколадки!</a>
+          <a class="button button-chocolate" href="">Хочу шоколадки!</a>
         </li>
       </ul>
 
@@ -110,27 +131,27 @@
       <ul class="items">
         <li>
           <img src="img/ice-cream-1.jpg" width="267"  height="267" alt="Апельсиновое мороженое">
-          <p>310 ₽<span>/кг</span></p>
+          <p class="hit">310₽<span>/кг</span></p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+          <a class="item-button" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое">
-          <p>380 ₽<span>/кг</span></p>
+          <p class="hit">380₽<span>/кг</span></p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+          <a class="item-button" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое">
-          <p>355 ₽<span>/кг</span></p>
+          <p class="hit">355₽<span>/кг</span></p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+          <a class="item-button" href="#">Быстрый просмотр</a>
         </li>
         <li>
           <img src="img/ice-cream-4.jpg" width="267" height="267"  alt="Сливочное крем-брюле мороженое">
-          <p>415 ₽<span>/кг</span></p>
+          <p class="hit">415₽<span>/кг</span></p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+          <a class="item-button" href="#">Быстрый просмотр</a>
         </li>
       </ul>
 
@@ -138,10 +159,10 @@
         <h2 class="visually-hidden">О магазине</h2>
         <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul>
-          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
-          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+          <li class="about-us-item-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="about-us-item-2">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="about-us-item-3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+          <li class="about-us-item-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
 
@@ -236,25 +257,23 @@
     </div>
   </footer>
 
-  <!--<form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">-->
-  <!--<h3>Мы обязательно вам ответим!</h3>-->
-  <!--<button class="button">Закрыть</button>-->
+  <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+  <h3>Мы обязательно вам ответим!</h3>
+  <button class="feedback-form-close" type="button">Закрыть</button>
 
-  <!--<label for="feedback-form-user-name" class="visually-hidden">Как вас зовут?</label>-->
-  <!--<input id="feedback-form-user-name" type="text" name="user-name" placeholder="Как вас зовут?">-->
+  <label for="feedback-form-user-name" class="visually-hidden">Как вас зовут?</label>
+  <input id="feedback-form-user-name" type="text" name="user-name" placeholder="Как вас зовут?">
 
-  <!--<label for="feedback-form-user-email" class="visually-hidden">Ваша почта для ответа?</label>-->
-  <!--<input id="feedback-form-user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">-->
+  <label for="feedback-form-user-email" class="visually-hidden">Ваша почта для ответа?</label>
+  <input id="feedback-form-user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
 
-  <!--<label for="feedback-form-user-comment" class="visually-hidden">Напишите что-нибудь...</label>-->
-  <!--<textarea-->
-  <!--id="feedback-form-user-comment"-->
-  <!--name="user-comment"-->
-  <!--placeholder="Напишите что-нибудь..."-->
-  <!--&gt;</textarea>-->
+  <label for="feedback-form-user-comment" class="visually-hidden">Напишите что-нибудь...</label>
+  <textarea id="feedback-form-user-comment" name="user-comment" placeholder="Напишите что-нибудь..."></textarea>
 
-  <!--<button class="button" type="submit">Отправить</button>-->
-  <!--</form>-->
+  <button class="button" type="submit">Отправить</button>
+  </form>
+
+  <div class="modal-overlay"></div>
 </div>
 </body>
 </html>
