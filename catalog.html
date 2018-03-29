@@ -77,24 +77,42 @@
             <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"></path>
           </svg>
           <span>2 товара</span>
-          <!--<table>-->
-          <!--<tr>-->
-          <!--<td><button class="button">Удалить</button></td>-->
-          <!--<td><img src="img/basket-ice-cream-1.png" width="33" height="33" alt="Фото мороженного"></td>-->
-          <!--<td>Пломбир с апельсиновым джемом</td>-->
-          <!--<td>1,5 кг х <span>200 руб.</span></td>-->
-          <!--<td>300 руб.</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-          <!--<td><button class="button">Удалить</button></td>-->
-          <!--<td><img src="img/basket-ice-cream-2.png" width="33" height="33" alt="Фото мороженного"></td>-->
-          <!--<td>Клубничный пломбир с присыпкой  из белого шоколада</td>-->
-          <!--<td>1,5 кг х <span>300 руб.</span></td>-->
-          <!--<td>450 руб.</td>-->
-          <!--</tr>-->
-          <!--</table>-->
-          <!--<p class="result">Итого: 750 руб.</p>-->
-          <!--<a class="basket-button" href="#">Оформить заказ</a>-->
+
+          <div class="open-basket">
+            <table>
+              <tr>
+                <td>
+                  <button class="basket-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                      <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z">
+                      </path>
+                    </svg>
+                  </button>
+                </td>
+                <td><img src="img/basket-ice-cream-1.png" width="33" height="33" alt="Фото мороженного"></td>
+                <td class="open-basket-title">Пломбир с апельсиновым джемом</td>
+                <td class="basket-weight">1,5 кг х <span>200 руб.</span></td>
+                <td class="price">300 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="basket-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                      <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z">
+                      </path>
+                    </svg>
+                  </button>
+                </td>
+                <td><img src="img/basket-ice-cream-2.png" width="33" height="33" alt="Фото мороженного"></td>
+                <td class="open-basket-title">Клубничный пломбир с присыпкой  из белого шоколада</td>
+                <td class="basket-weight">1,5 кг х <span>300 руб.</span></td>
+                <td class="price">450 руб.</td>
+              </tr>
+            </table>
+            <div class="basket-line"></div>
+            <p class="result">Итого: 750 руб.</p>
+            <a class="button basket-button" href="#">Оформить заказ</a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -180,84 +198,96 @@
       <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Апельсиновое мороженое">
       <p>310₽<span>/кг</span></p>
       <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое">
       <p>380₽<span>/кг</span></p>
       <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое">
       <p>355₽<span>/кг</span></p>
       <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле мороженое">
       <p>415₽<span>/кг</span></p>
       <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-5.jpg" width="267" height="267" alt="Брусничное мороженое">
       <p>325₽<span>/кг</span></p>
       <a href="#">Сливочное с брусничным джемом</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-6.jpg" width="267" height="267" alt="Сливочно-черничное мороженое">
       <p>410₽<span>/кг</span></p>
       <a href="#">Сливочно-черничное с цельными ягодами черники</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-7.jpg" width="267" height="267" alt="ливочно-лимонное мороженое">
       <p>375₽<span>/кг</span></p>
       <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-8.jpg" width="267" height="267" alt="Мороженое с шоколадной стружкой">
       <p>320₽<span>/кг</span></p>
       <a href="#">Сливочное с шоколадной стружкой</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое">
       <p>44₽<span>/кг</span></p>
       <a href="#">Сливочно-ванильное с кусочками шоколада</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-10.jpg" width="267" height="267" alt="Мороженое с ментоловым сиропом">
       <p>435₽<span>/кг</span></p>
       <a href="#">Сливочноe с ментоловым сиропом</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-11.jpg" width="267" height="267" alt="Мороженое с кусочками черного шоколада">
       <p>355₽<span>/кг</span></p>
       <a href="#">Сливочное с кусочками черного шоколада</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-12.jpg" width="267" height="267" alt="Мороженое с мятным сиропом">
       <p>420₽<span>/кг</span></p>
       <a href="#">Сливочное с мятным сиропом</a>
-      <!--<a class="item-button" href="#">Быстрый просмотр</a>-->
+      <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
   </ul>
   <div class="pagination-wrapper">
     <ul class="pagination">
-      <li><a href="#">&lt;</a></li>
+      <li>
+        <a href="#">
+          <svg class="pagination-left" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+            <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"></path>
+          </svg>
+        </a>
+      </li>
       <li class="pagination-selected">1</li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
-      <li><a href="#">></a></li>
+      <li>
+        <a href="#">
+          <svg class="pagination-right" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+            <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"></path>
+          </svg>
+        </a>
+      </li>
     </ul>
   </div>
 </main>
