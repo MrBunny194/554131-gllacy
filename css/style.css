@@ -538,11 +538,11 @@ a {
 .current {
   background-color: #d07058;
   text-decoration: none;
-  padding: 8px 14px 8px;
+  padding: 6px 13px 6px;
   border-radius: 50px;
   box-sizing: border-box;
   margin-right: -14px;
-  margin-left: -14px;
+  margin-left: -12px;
 }
 
 .basket-link td {
@@ -1283,6 +1283,139 @@ p.address {
   display: block;
 }
 
+.focus {
+  background-color: #d07058;
+}
+
+/* ************************** range-controls ************************** */
+
+.filter-form-price span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  display: block;
+  margin-left: 30px;
+  margin-top: -4px;
+}
+
+.wrapper-range-controls {
+  background-color: rgba(255, 255, 255, 0.2);
+  min-height: 36px;
+  width: 219px;
+  border-radius: 50px;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.range-controls {
+  position: relative;
+  padding-top: 16px;
+  padding-left: 22px;
+}
+
+.range-controls .scale {
+  min-height: 4px;
+  width: 176px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 102px;
+  min-height: 4px;
+  margin-left: 25px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 35px;
+  top: 8px;
+}
+
+.range-toggle-max {
+  left: 133px;
+  top: 8px;
+}
+/* ************************** end range-controls ************************** */
+
+/* ************************** checkbox ************************** */
+.wrapper-radio {
+  display: block;
+  width: 402px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 2px;
+  margin-left: 30px;
+  border-radius: 50px;
+  padding-left: 12px;
+}
+
+.wrapper-radio label {
+  font-size: 16px;
+  line-height: 33px;
+}
+
+.filter-title {
+  margin-right: 12px;
+}
+
+.wrapper-radio .filter-label:last-child .filter-title {
+  margin-right: 0;
+}
+
+.filter-label input[type="radio"] + .filter-title:before {
+  content: url("../img/radio-off.svg");
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.filter-label input[type="radio"]:checked + .filter-title:before {
+  content: url("../img/radio-on.svg");
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+/* ************************** end checkbox ************************** */
+.select {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  border: none;
+  padding: 9px 16px;
+  padding-right: 32px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #ffffff;
+  position: relative;
+  outline: none;
+}
+
+.filter-form-sort:after {
+  content: url("../img/select-arrow.svg");
+  position: absolute;
+  left: 196px;
+  top: 213px;
+}
+
+.sort-text {
+  margin-left: 15px;
+  padding-bottom: 6px;
+  display: block;
+  margin-top: -5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
 /* ************************** footer ************************** */
 
 .main-footer {
@@ -1454,4 +1587,3 @@ p.address {
 }
 
 /* ************************** Feedback Form End ************************** */
-
