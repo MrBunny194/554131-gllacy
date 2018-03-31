@@ -82,16 +82,22 @@ a {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
-.menu > a:hover,
-.menu > a:focus {
+.menu:hover > a,
+.menu:focus > a {
+  color: #333333;
+}
+
+.menu:hover,
+.menu:focus {
   border-bottom: none;
   background-color: #f8f7f4;
-  color: #333333;
-  padding: 9px 13px 6px;
+  padding: 8px 13px 0px;
   border-radius: 50px;
   box-sizing: border-box;
   margin-right: -13px;
   margin-left: -13px;
+  margin-bottom: 7px;
+  margin-top: -7px;
 }
 
 .menu > a:active {
@@ -118,6 +124,7 @@ a {
   margin-top: 11px;
   left: 158px;
   border-radius: 5px;
+  /*border-top: 11px solid;*/
 }
 
 .submenu .submenu-title {
@@ -549,6 +556,8 @@ a {
   box-sizing: border-box;
   margin-right: -14px;
   margin-left: -12px;
+  margin-bottom: 7px;
+  margin-top: -7px;
 }
 
 .basket-link td {
@@ -962,12 +971,7 @@ span.item-li-title {
 }
 
 .subscribe {
-  background-color: #f8f7f4;
-  background-clip: content-box;
-  background-size: cover;
-  border: 5px solid black;
-  border-image-source: url("../img/bg-post.svg");
-  border-image-slice: 5;
+  background: #f8f7f4 url("../img/bg-post.png") no-repeat;
 }
 
 .subscribe p {
@@ -1149,7 +1153,9 @@ p.address {
   justify-content: flex-end;
 }
 
-.pagination li a:hover {
+.pagination li a:hover,
+.pagination li a:active,
+.pagination li a:focus {
   border: none;
 }
 
@@ -1160,9 +1166,43 @@ p.address {
   justify-content: flex-end;
 }
 
-.pagination-selected {
-
+.pagination-selected,
+.pagination li a:focus {
+  background-color: #fff;
+  color: #000000;
+  text-decoration: none;
+  padding: 4px 9px 3px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-right: -10px;
+  margin-left: -6px;
+  cursor: pointer;
 }
+
+.pagination li:first-child a:hover,
+.pagination li:last-child a:hover,
+.pagination li:first-child a:focus,
+.pagination li:last-child a:focus {
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.pagination li a:focus .pagination-selected {
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.pagination li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px 9px 3px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-right: -10px;
+  margin-left: -6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 
 .pagination-left {
   transform: rotate(180deg);
@@ -1173,6 +1213,10 @@ p.address {
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
+  padding: 4px 9px 3px;
+  box-sizing: border-box;
+  margin-right: -10px;
+  margin-left: -6px;
 }
 
 .pagination p {
