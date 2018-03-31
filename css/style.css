@@ -670,7 +670,7 @@ li.menu:first-child:after {
   bottom: -86px;
   padding: 20px 15px;
   border-radius: 5px;
-  z-index: 11;
+  z-index: 5;
 }
 
 .button-search:focus ~ .search-form,
