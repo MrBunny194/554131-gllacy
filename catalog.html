@@ -154,15 +154,14 @@
       </div>
 
       <div class="filter-form-fat-content">
-        <span class="filter-title">Жирность:</span>
+        <span class="filter-head">Жирность:</span>
         <div class="wrapper-radio">
           <label class="filter-label">
-            <input id="radio-zero" class="radio-zero visually-hidden" type="radio" name="fat-content" value="0">
+            <input class="visually-hidden" type="radio" name="fat-content" value="0">
             <span class="filter-title">0%</span>
           </label>
-
           <label class="filter-label">
-            <input class="visually-hidden" type="radio" name="fat-content" value="до 10">
+            <input class="visually-hidden" type="radio" name="fat-content" value="до 10" checked>
             <span class="filter-title">до 10%</span>
           </label>
           <label class="filter-label">
@@ -178,32 +177,31 @@
     </div>
 
     <div class="filter-form-fillers">
-      Наполнители:<br />
-      <label>
-        <input type="checkbox" name="fillers" value="chocolate" checked>
-        шоколадные
-      </label>
-      <label>
-        <input type="checkbox" name="fillers" value="sugar" checked>
-        сахарные присыпки
-      </label>
-      <label>
-        <input type="checkbox" name="fillers" value="fruits">
-        фрукты
-      </label>
-      <label>
-        <input type="checkbox" name="fillers" value="syrup">
-        сиропы
-      </label>
-      <label>
-        <input type="checkbox" name="fillers" value="jam">
-        джемы
-      </label>
+      <span class="checkbox-filter-head">Наполнители:</span>
+      <div class="wrapper-checkbox">
+        <label class="checkbox-label">
+          <input class="visually-hidden" type="checkbox" name="fillers" value="chocolate" checked>
+          <span class="filter-checkbox-title">шоколадные</span>
+        </label>
+        <label class="checkbox-label">
+          <input class="visually-hidden" type="checkbox" name="fillers" value="sugar" checked>
+          <span class="filter-checkbox-title">сахарные присыпки</span>
+        </label>
+        <label class="checkbox-label">
+          <input class="visually-hidden" type="checkbox" name="fillers" value="fruits">
+          <span class="filter-checkbox-title">фрукты</span>
+        </label>
+        <label class="checkbox-label">
+          <input class="visually-hidden" type="checkbox" name="fillers" value="syrup">
+          <span class="filter-checkbox-title">сиропы</span>
+        </label>
+        <label class="checkbox-label">
+          <input class="visually-hidden" type="checkbox" name="fillers" value="jam">
+          <span class="filter-checkbox-title">джемы</span>
+        </label>
+      </div>
 
       <button class="filter-form-button" type="submit">Применить</button>
-
-
-
     </div>
   </form>
 
