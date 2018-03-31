@@ -193,7 +193,7 @@ li.menu:first-child:after {
 
 .button-search {
   border-radius: 50%;
-  background-color: rgba(181, 181, 180, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   outline: none;
   padding: 7px 7px 4px;
   border: none;
@@ -202,13 +202,13 @@ li.menu:first-child:after {
 }
 
 .button-enter {
-  background-color: rgba(181, 181, 180, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   position: relative;
   color: white;
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 7px 2px 9px 55px;
+  padding: 7px 0 9px 46px;
   border-radius: 50px;
 }
 
@@ -218,7 +218,7 @@ li.menu:first-child:after {
 
 .entrance {
   position: absolute;
-  right: 60px;
+  right: 57px;
   top: 6px;
 }
 
@@ -228,7 +228,7 @@ li.menu:first-child:after {
 
 .catalog .basket-link {
   position: relative;
-  background-color: rgba(181, 181, 180, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   padding-left: 55px;
   padding-right: 12px;
   border-radius: 50px;
@@ -237,7 +237,7 @@ li.menu:first-child:after {
 
 .basket-link {
   position: relative;
-  background-color: rgba(181, 181, 180, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   padding-left: 44px;
   padding-right: 12px;
   border-radius: 50px;
@@ -262,15 +262,22 @@ li.menu:first-child:after {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  font-weight: 400;
   text-align: right;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 72px;
+  right: 0;
+  font-weight: 700;
 }
 
 .work-time .phone {
   font-size: 22px;
   line-height: 24px;
+  margin: 0;
+  font-weight: 600;
+  margin-top: 5px;
 }
-
 
 /* ************************* Slider ************************* */
 .site-wrapper {
@@ -301,7 +308,7 @@ li.menu:first-child:after {
 
 .slider {
   position: relative;
-  padding-top: 303px;
+  padding-top: 301px;
   text-align: center;
   color: #ffffff;
 }
@@ -462,7 +469,7 @@ li.menu:first-child:after {
 .about-us li {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: 400;
   width: 477px;
   margin-bottom: 22px;
   margin-left: 4px;
@@ -626,9 +633,12 @@ li.menu:first-child:after {
 .button-enter:hover g,
 .button-enter:hover,
 .basket-link:hover g,
-.basket-link:hover span{
-  fill: black;
-  color: black;
+.basket-link:hover span,
+.button-search-hover:hover path,
+.button-enter-hover:hover g,
+.button-enter-hover:hover span {
+  fill: #000000;
+  color: #000000;
 }
 
 .basket-link:hover {
@@ -644,6 +654,7 @@ li.menu:first-child:after {
   bottom: -86px;
   padding: 20px 15px;
   border-radius: 5px;
+  z-index: 11;
 }
 
 .button-search:focus ~ .search-form,
@@ -655,9 +666,14 @@ li.menu:first-child:after {
 
 .button-search:hover,
 .button-enter:hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
+.button-search-hover:hover,
+.button-enter-hover:hover {
+  background: #ffffff;
+  border-radius: 50px;
+}
 
 .button-search:after {
   min-height: 15px;
@@ -762,14 +778,6 @@ li.menu:first-child:after {
   margin-right: 5px;
   font-size: 14px;
   line-height: 16px;
-}
-
-.work-time {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  top: 75px;
-  right: 0;
 }
 
 .button {
@@ -1302,6 +1310,7 @@ p.address {
   padding-top: 12px;
   padding-bottom: 6px;
 }
+
 .open-basket {
   display: block;
   position: absolute;
