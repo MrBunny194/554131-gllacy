@@ -48,6 +48,10 @@ a {
   line-height: 18px;
 }
 
+.nav-user {
+  margin-left: auto;
+}
+
 .main-header li,
 .container li,
 .main-footer li {
