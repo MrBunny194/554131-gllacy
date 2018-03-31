@@ -18,6 +18,7 @@ a {
 .main-footer,
 .catalog {
   max-width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
 }
 
@@ -28,6 +29,7 @@ a {
 
 .content-wrapper {
   max-width: 1146px;
+  min-width: 1146px;
   margin: 0 auto;
 }
 
@@ -802,6 +804,16 @@ a {
   text-align: center;
 }
 
+.container-catalog .items {
+  margin: 0;
+}
+
+span.item-li-title {
+  display: inline-block;
+  width: 207px;
+  font-size: 16px;
+}
+
 .items li {
   width: 268px;
   position: relative;
@@ -819,6 +831,11 @@ a {
   margin-bottom: 17px;
   text-align: left;
   position: relative;
+}
+
+.container-catalog .items p {
+  margin-top: -65px;
+  margin-bottom: 21px;
 }
 
 .item-button {
@@ -1024,6 +1041,16 @@ p.address {
   display: block;
 }
 
+.address span.address-small {
+  display: block;
+  width: 148px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: -6px 0 0;
+  color: #323232;
+}
+
 .contacts-phone span {
   margin: 0;
   display: block;
@@ -1115,6 +1142,13 @@ p.address {
   border: none;
 }
 
+.container-catalog .pagination-wrapper {
+  display: flex;
+  margin-top: 66px;
+  margin-bottom: -4px;
+  justify-content: flex-end;
+}
+
 .pagination li a:hover {
   border: none;
 }
@@ -1154,7 +1188,7 @@ p.address {
 
 .catalog .main-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.3);;
-  padding-top: 34px;
+  padding-top: 18px;
 }
 
 .catalog .basket-link {

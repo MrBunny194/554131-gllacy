@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="catalog content-wrapper">
-<header class="main-header">
+<body class="catalog">
+<header class="main-header content-wrapper">
   <div class="header-wrapper">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -125,7 +125,7 @@
   </ul>
 </header>
 
-<main class="container container-catalog">
+<main class="container container-catalog content-wrapper">
   <h1 class="visually-hidden">Каталог продукции</h1>
   <h2 class="item-header">Сливочное мороженое</h2>
   <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
@@ -235,7 +235,7 @@
     <li>
       <img src="img/ice-cream-5.jpg" width="267" height="267" alt="Брусничное мороженое">
       <p>325₽<span>/кг</span></p>
-      <a href="#">Сливочное с брусничным джемом</a>
+      <span class="item-li-title"><a href="#">Сливочное с брусничным джемом</a></span>
       <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
@@ -258,14 +258,14 @@
     </li>
     <li>
       <img src="img/ice-cream-9.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое">
-      <p>44₽<span>/кг</span></p>
-      <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+      <p>440₽<span>/кг</span></p>
+      <span class="item-li-title"><a href="#">Сливочно-ванильное с кусочками шоколада</a></span>
       <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
       <img src="img/ice-cream-10.jpg" width="267" height="267" alt="Мороженое с ментоловым сиропом">
       <p>435₽<span>/кг</span></p>
-      <a href="#">Сливочноe с ментоловым сиропом</a>
+      <span class="item-li-title"><a href="#">Сливочноe с ментоловым сиропом</a></span>
       <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
     <li>
@@ -281,6 +281,7 @@
       <a class="button item-button" href="#">Быстрый просмотр</a>
     </li>
   </ul>
+
   <div class="pagination-wrapper">
     <ul class="pagination">
       <li>
