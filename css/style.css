@@ -125,9 +125,11 @@ li.menu:first-child:hover:after {
   width: 63px;
   content: "";
   display: inline-block;
-  background-color: #0000;
+  background-color: transparent;
   margin-bottom: 11px;
   position: absolute;
+  left: 175px;
+  top: 50px;
 }
 
 /* ************************* Submenu ************************* */
@@ -793,6 +795,7 @@ li.menu:first-child:hover:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 
