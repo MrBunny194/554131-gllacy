@@ -26,7 +26,7 @@ a {
 }
 
 .catalog {
-  background: #849d8f;
+  background-image: linear-gradient( to bottom, #9cb0a5 0%, #849d8f 100%);
 }
 
 
