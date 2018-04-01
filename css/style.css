@@ -70,6 +70,10 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.footer-link a {
+  font-weight: 400;
+}
+
 .items a {
   font-size: 16px;
   line-height: 22px;
@@ -85,9 +89,10 @@ a {
 .breadcrumbs a:focus,
 .pagination a:hover,
 .pagination a:focus {
-  color: #f6b5a5;
+  color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
+
 
 .menu:hover > a,
 .menu:focus > a {
@@ -361,7 +366,7 @@ li.menu:first-child:hover:after {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   margin-bottom: 26px;
   cursor: pointer;
-
+  font-weight: 700;
 }
 
 .slider-controls label {
@@ -542,7 +547,7 @@ li.menu:first-child:hover:after {
 .footer-link li:first-child {
   font-size: 13px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .main-footer p {
@@ -842,31 +847,18 @@ li.menu:first-child:hover:after {
   color: #ffffff;
   border-radius: 50px;
   outline: none;
-  background: #f26843;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
-  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  background-image: linear-gradient( 90deg, #f58669 0%, #f58669 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
@@ -912,12 +904,20 @@ li.menu:first-child:hover:after {
   align-self: flex-end;
   margin-bottom: 23px;
   font-size: 18px;
+  font-weight: 700;
+  background-image: linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+}
+
+.advertising .button:active,
+.advertising .button.button-chocolate:active {
+  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
 }
 
 .advertising .button.button-chocolate {
   padding-right: 12px;
   padding-left: 11px;
   padding-bottom: 11px;
+  background-image: -ms-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
 }
 
 .advertising li:first-child {
@@ -1976,7 +1976,7 @@ p.address {
 
 .feedback-form,
 .modal-overlay {
-  /*display: none;*/
+  display: none;
 }
 
 
