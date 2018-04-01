@@ -2,8 +2,9 @@ a {
   text-decoration: none;
 }
 
+.catalog,
 .site-wrapper,
-.catalog{
+.body-wrapper {
   margin: 0 auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -11,11 +12,6 @@ a {
   line-height: 22px;
   font-weight: 500;
   color: #323232;
-
-}
-
-.site-wrapper {
-  max-width: 1200px;
   min-width: 1200px;
 }
 
@@ -644,6 +640,7 @@ li.menu:first-child:hover:after {
 .filter-form label {
   font-size: 16px;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .container-catalog h2 {
@@ -749,6 +746,7 @@ li.menu:first-child:hover:after {
   width: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .login-form-wrapper {
@@ -1139,6 +1137,7 @@ span.item-li-title {
   padding-bottom: 13px;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .map {
@@ -1223,6 +1222,7 @@ p.address {
   padding-bottom: 14px;
   margin-left: 27px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /* ----------------------- catalog.html ----------------------- */
@@ -1297,6 +1297,7 @@ p.address {
   font-size: 16px;
   margin-top: 7px;
   margin-left: 14px;
+  cursor: pointer;
 }
 
 .catalog .items li {
@@ -1668,6 +1669,7 @@ p.address {
 .wrapper-radio label {
   font-size: 16px;
   line-height: 33px;
+  cursor: pointer;
 }
 
 .filter-head {
@@ -1720,6 +1722,7 @@ p.address {
   display: inline-block;
   padding-right: 5px;
   top: 6px;
+  cursor: pointer;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .filter-checkbox-title:before {
@@ -1748,6 +1751,7 @@ p.address {
   color: #ffffff;
   position: relative;
   outline: none;
+  cursor: pointer;
 }
 
 .select::-ms-expand {
