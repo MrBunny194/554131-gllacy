@@ -713,6 +713,7 @@ li.menu:first-child:hover:after {
   margin-bottom: 11px;
   position: absolute;
   right: 0;
+  top: 26px;
 }
 
 .button-enter:after {
@@ -725,6 +726,7 @@ li.menu:first-child:hover:after {
   margin-bottom: 11px;
   position: absolute;
   right: 0;
+  top: 26px;
 }
 /* **************** End Search Form **************** */
 
