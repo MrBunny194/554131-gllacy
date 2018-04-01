@@ -1826,6 +1826,7 @@ p.address {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 17px;
+  margin-right: auto;
 }
 
 .main-footer {
@@ -1856,6 +1857,7 @@ p.address {
   flex-wrap: wrap;
   padding-left: 49px;
   padding-bottom: 31px;
+  margin-right: auto;
 }
 
 .footer-link li {
