@@ -26,6 +26,9 @@ a {
 }
 
 .catalog {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(#9cb0a5), to(#849d8f));
+  background-image: -webkit-linear-gradient( top, #9cb0a5 0%, #849d8f 100%);
+  background-image: -o-linear-gradient( top, #9cb0a5 0%, #849d8f 100%);
   background-image: linear-gradient( to bottom, #9cb0a5 0%, #849d8f 100%);
 }
 
@@ -844,18 +847,30 @@ li.menu:first-child:hover:after {
   color: #ffffff;
   border-radius: 50px;
   outline: none;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(231,74,53)), to(rgb(242,104,67)));
+  background-image: -webkit-linear-gradient(bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: linear-gradient(to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .button:hover {
+  background-image: -webkit-gradient( linear, left bottom, left top, from(#f58669), to(#f58669));
+  background-image: -webkit-linear-gradient( bottom, #f58669 0%, #f58669 100%);
+  background-image: -o-linear-gradient( bottom, #f58669 0%, #f58669 100%);
   background-image: linear-gradient( to top, #f58669 0%, #f58669 100%);
+  -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
+  background: -webkit-linear-gradient(bottom, #e74a35 0%, #f26843 100%);
+  background: -o-linear-gradient(bottom, #e74a35 0%, #f26843 100%);
   background: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  -webkit-box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
@@ -902,11 +917,17 @@ li.menu:first-child:hover:after {
   margin-bottom: 23px;
   font-size: 18px;
   font-weight: 700;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(202,56,36)), to(rgb(242,104,67)));
+  background-image: -webkit-linear-gradient(bottom, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
   background-image: linear-gradient(to top, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
 }
 
 .advertising .button:active,
 .advertising .button.button-chocolate:active {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(242,104,67)), to(rgb(231,74,53)));
+  background-image: -webkit-linear-gradient(bottom, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
   background-image: linear-gradient(to top, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
 }
 
@@ -1594,15 +1615,15 @@ p.address {
 
 .basket-link:after {
   min-height: 15px;
-    max-height: 15px;
-    width: 119px;
-    content: "";
-    display: inline-block;
-    background-color: transparent;
-    margin-bottom: 11px;
-    position: absolute;
-    right: 0;
-    top: 26px;
+  max-height: 15px;
+  width: 119px;
+  content: "";
+  display: inline-block;
+  background-color: transparent;
+  margin-bottom: 11px;
+  position: absolute;
+  right: 0;
+  top: 26px;
 }
 
 .focus {
@@ -1924,6 +1945,8 @@ p.address {
   flex-direction: column;
   bottom: 338px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 429px;
   padding-right: 24px;
@@ -2005,34 +2028,56 @@ p.address {
 }
 
 .modal-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 
 .modal-overlay-on {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .modal-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
 /* ************************** Feedback Form End ************************** */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
 
   0% {
+    -webkit-transform: translatex(-1000px);
     transform: translatex(-1000px);
   }
 
   100% {
+    -webkit-transform: translatex(-240px);
     transform: translatex(-240px);
   }
 }
 
-@keyframes shake {
+@keyframes bounce {
+
+  0% {
+    -webkit-transform: translatex(-1000px);
+    transform: translatex(-1000px);
+  }
+
+  100% {
+    -webkit-transform: translatex(-240px);
+    transform: translatex(-240px);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
+    -webkit-transform: translateX(-250px);
     transform: translateX(-250px);
   }
 
@@ -2041,6 +2086,7 @@ p.address {
   50%,
   70%,
   90% {
+    -webkit-transform: translateX(-240px);
     transform: translateX(-240px);
   }
 
@@ -2048,6 +2094,32 @@ p.address {
   40%,
   60%,
   80% {
+    -webkit-transform: translateX(-230px);
+    transform: translateX(-230px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-240px);
+    transform: translateX(-240px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-230px);
     transform: translateX(-230px);
   }
 }
