@@ -940,7 +940,7 @@ li.menu:first-child:hover:after {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0;
   margin: 39px 0 0;
   text-align: center;
@@ -948,6 +948,10 @@ li.menu:first-child:hover:after {
 
 .container-catalog .items {
   margin: 0;
+}
+
+.catalog .items li:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 span.item-li-title {
@@ -1300,6 +1304,7 @@ p.address {
 
 .catalog .items li {
   margin-top: 40px;
+  margin-right: 24px;
 }
 
 .pagination {
