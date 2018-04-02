@@ -94,6 +94,7 @@ a {
 }
 
 
+
 .menu:hover > a,
 .menu:focus > a {
   color: #333333;
@@ -930,6 +931,14 @@ li.menu:first-child:hover:after {
 .items a {
   padding: 0;
   margin: 0;
+}
+
+.items li {
+  margin-right: 24px;
+}
+
+.items li:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 .items {
