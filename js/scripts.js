@@ -1,5 +1,5 @@
 var link = document.querySelector(".feedback-link");
-var popup = document.querySelector(".feedback-form")
+var popup = document.querySelector(".feedback-form");
 var overlay = document.querySelector(".modal-overlay");
 var close = popup.querySelector(".feedback-form-close");
 var login = popup.querySelector("[name=user-name]");
@@ -26,7 +26,7 @@ popup.addEventListener("submit", function(event) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-  } 
+  }
 });
 
 window.addEventListener("keydown", function(event) {
