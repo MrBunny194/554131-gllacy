@@ -1854,7 +1854,7 @@ p.address {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  width: 350px;
+  width: 352px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 49px;
@@ -1899,7 +1899,8 @@ p.address {
   -ms-flex-direction: column;
   flex-direction: column;
   top: 338px;
-  right: 360px;
+  left: 50%; 
+  transform: translateX(-50%);
   width: 429px;
   padding-right: 24px;
   padding-left: 25px;
