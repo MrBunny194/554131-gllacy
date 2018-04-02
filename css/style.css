@@ -1480,6 +1480,7 @@ p.address {
 
 .open-basket .open-basket-title {
   width: 220px;
+  margin-right: 26px;
 }
 
 .basket-close {
@@ -1523,7 +1524,7 @@ p.address {
 }
 
 .open-basket .basket-weight {
-  margin-left: 25px;
+  margin-right: 17px;
   color: #323232;
   margin-top: 11px;
 }
@@ -1533,7 +1534,6 @@ p.address {
 }
 
 .open-basket .price {
-  margin-left: 20px;
   margin-bottom: -7px;
 }
 
@@ -1904,7 +1904,7 @@ p.address {
   -ms-flex-direction: column;
   flex-direction: column;
   bottom: 338px;
-  left: 50%; 
+  left: 50%;
   transform: translateX(-50%);
   width: 429px;
   padding-right: 24px;
@@ -2001,16 +2001,20 @@ p.address {
 /* ************************** Feedback Form End ************************** */
 
 @keyframes bounce {
- 
+
+  0% {
+    transform: translatex(-1000px);
+  }
+
   100% {
-    transform: translatex(500px);
+    transform: translatex(-240px);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(-10px);
+    transform: translateX(-250px);
   }
 
   10%,
@@ -2018,13 +2022,13 @@ p.address {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(-240px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(-230px);
   }
 }
