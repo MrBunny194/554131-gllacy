@@ -847,18 +847,18 @@ li.menu:first-child:hover:after {
   color: #ffffff;
   border-radius: 50px;
   outline: none;
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: linear-gradient(to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .button:hover {
-  background-image: linear-gradient( 90deg, #f58669 0%, #f58669 100%);
+  background-image: linear-gradient( to top, #f58669 0%, #f58669 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
-  background: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
+  background: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
@@ -905,12 +905,12 @@ li.menu:first-child:hover:after {
   margin-bottom: 23px;
   font-size: 18px;
   font-weight: 700;
-  background-image: linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: linear-gradient(to top, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
 }
 
 .advertising .button:active,
 .advertising .button.button-chocolate:active {
-  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: linear-gradient(to top, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
 }
 
 .advertising .button.button-chocolate {
