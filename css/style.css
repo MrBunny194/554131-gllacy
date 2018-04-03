@@ -26,10 +26,7 @@ a {
 }
 
 .catalog {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(#9cb0a5), to(#849d8f));
-  background-image: -webkit-linear-gradient( top, #9cb0a5 0%, #849d8f 100%);
-  background-image: -o-linear-gradient( top, #9cb0a5 0%, #849d8f 100%);
-  background-image: linear-gradient( to bottom, #9cb0a5 0%, #849d8f 100%);
+  background-image: linear-gradient( to bottom, #9cb0a5 0%, #849d8f 30%);
 }
 
 
@@ -127,6 +124,7 @@ li.menu:first-child:hover:after {
   width: 63px;
   content: "";
   display: inline-block;
+  vertical-align: top;
   background-color: transparent;
   margin-bottom: 11px;
   position: absolute;
@@ -374,9 +372,7 @@ li.menu:first-child:hover:after {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -388,7 +384,6 @@ li.menu:first-child:hover:after {
   border: 2px solid #ffffff;
   border-radius: 50%
 }
-
 
 .slider-controls {
   position: absolute;
@@ -403,27 +398,27 @@ li.menu:first-child:hover:after {
   display: none;
 }
 
-#product-1:checked ~ .site-wrapper {
+.product-1:checked ~ .site-wrapper {
   background: #849d8f url("../img/slider-item1.png") no-repeat top center;
 }
 
-#product-2:checked ~ .site-wrapper {
+.product-2:checked ~ .site-wrapper {
   background: #8996a6 url("../img/slider-item2.png") no-repeat top center;
 }
 
-#product-3:checked ~ .site-wrapper {
+.product-3:checked ~ .site-wrapper {
   background: #9d8b84 url("../img/slider-item3.png") no-repeat top center;
 }
 
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+.product-1:checked ~ .site-wrapper .slide1,
+.product-2:checked ~ .site-wrapper .slide2,
+.product-3:checked ~ .site-wrapper .slide3 {
   display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+.product-1:checked ~ .site-wrapper label[for="product-1"],
+.product-2:checked ~ .site-wrapper label[for="product-2"],
+.product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 /* ************************* Slider END ************************* */
@@ -435,6 +430,7 @@ li.menu:first-child:hover:after {
   box-sizing: border-box;
   padding-left: 14px;
   display: inline-block;
+  vertical-align: middle;
   outline: none;
   width: 240px;
   height: 42px;
@@ -713,6 +709,7 @@ li.menu:first-child:hover:after {
   width: 33px;
   content: "";
   display: inline-block;
+  vertical-align: top;
   background-color: transparent;
   margin-bottom: 11px;
   position: absolute;
@@ -726,6 +723,7 @@ li.menu:first-child:hover:after {
   width: 103px;
   content: "";
   display: inline-block;
+  vertical-align: top;
   background-color: transparent;
   margin-bottom: 11px;
   position: absolute;
@@ -986,6 +984,7 @@ li.menu:first-child:hover:after {
 
 span.item-li-title {
   display: inline-block;
+  vertical-align: top;
   width: 207px;
   font-size: 16px;
 }
@@ -1211,7 +1210,7 @@ span.item-li-title {
   border-radius: 15px;
   width: 303px;
   padding-top: 32px;
-
+  z-index: 3;
 }
 
 .contacts p {
@@ -1515,6 +1514,7 @@ p.address {
 
 .open-basket td {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 6px;
 }
 
@@ -1587,6 +1587,7 @@ p.address {
 .button.basket-button {
   color: #ffffff;
   display: inline-block;
+  vertical-align: top;
   margin-top: 14px;
   margin-left: 355px;
   font-size: 18px;
@@ -1619,6 +1620,7 @@ p.address {
   width: 119px;
   content: "";
   display: inline-block;
+  vertical-align: top;
   background-color: transparent;
   margin-bottom: 11px;
   position: absolute;
@@ -1771,6 +1773,7 @@ p.address {
   position: relative;
   width: 27px;
   display: inline-block;
+  vertical-align: bottom;
   padding-right: 5px;
   top: 6px;
   cursor: pointer;
@@ -1938,16 +1941,16 @@ p.address {
 /* ************************** Feedback Form ************************** */
 .feedback-form {
   background-color: #f8f7f4;
-  position: absolute;
+  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  bottom: 338px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 429px;
   padding-right: 24px;
   padding-left: 25px;
@@ -2048,62 +2051,24 @@ p.address {
 
 /* ************************** Feedback Form End ************************** */
 
-@-webkit-keyframes bounce {
-
-  0% {
-    -webkit-transform: translatex(-1000px);
-    transform: translatex(-1000px);
-  }
-
-  100% {
-    -webkit-transform: translatex(-240px);
-    transform: translatex(-240px);
-  }
-}
-
 @keyframes bounce {
-
   0% {
-    -webkit-transform: translatex(-1000px);
-    transform: translatex(-1000px);
+    top: 50%;
+    transform: translate(-1000px, -50%);
+
   }
 
   100% {
-    -webkit-transform: translatex(-240px);
-    transform: translatex(-240px);
-  }
-}
-
-@-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(-250px);
-    transform: translateX(-250px);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-240px);
-    transform: translateX(-240px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(-230px);
-    transform: translateX(-230px);
+    top: 50%;
+    transform: translate(-240px, -50%);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX(-250px);
-    transform: translateX(-250px);
+    top: 50%;
+    transform: translate(-250px, -50%);
   }
 
   10%,
@@ -2111,15 +2076,23 @@ p.address {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-240px);
-    transform: translateX(-240px);
+    top: 50%;
+    transform: translate(-240px, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(-230px);
-    transform: translateX(-230px);
+    top: 50%;
+    transform: translate(-230px, -50%);
   }
+}
+
+.map-iframe {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  border: none;
 }
