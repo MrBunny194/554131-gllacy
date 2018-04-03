@@ -26,6 +26,9 @@ a {
 }
 
 .catalog {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(#9cb0a5), color-stop(30%, #849d8f));
+  background-image: -webkit-linear-gradient( top, #9cb0a5 0%, #849d8f 30%);
+  background-image: -o-linear-gradient( top, #9cb0a5 0%, #849d8f 30%);
   background-image: linear-gradient( to bottom, #9cb0a5 0%, #849d8f 30%);
 }
 
@@ -2051,23 +2054,41 @@ p.address {
 
 /* ************************** Feedback Form End ************************** */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
     top: 50%;
+    -webkit-transform: translate(-1000px, -50%);
     transform: translate(-1000px, -50%);
 
   }
 
   100% {
     top: 50%;
+    -webkit-transform: translate(-240px, -50%);
     transform: translate(-240px, -50%);
   }
 }
 
-@keyframes shake {
+@keyframes bounce {
+  0% {
+    top: 50%;
+    -webkit-transform: translate(-1000px, -50%);
+    transform: translate(-1000px, -50%);
+
+  }
+
+  100% {
+    top: 50%;
+    -webkit-transform: translate(-240px, -50%);
+    transform: translate(-240px, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
     top: 50%;
+    -webkit-transform: translate(-250px, -50%);
     transform: translate(-250px, -50%);
   }
 
@@ -2077,6 +2098,7 @@ p.address {
   70%,
   90% {
     top: 50%;
+    -webkit-transform: translate(-240px, -50%);
     transform: translate(-240px, -50%);
   }
 
@@ -2085,6 +2107,35 @@ p.address {
   60%,
   80% {
     top: 50%;
+    -webkit-transform: translate(-230px, -50%);
+    transform: translate(-230px, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    top: 50%;
+    -webkit-transform: translate(-250px, -50%);
+    transform: translate(-250px, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    top: 50%;
+    -webkit-transform: translate(-240px, -50%);
+    transform: translate(-240px, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    top: 50%;
+    -webkit-transform: translate(-230px, -50%);
     transform: translate(-230px, -50%);
   }
 }
