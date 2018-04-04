@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <title>Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body-wrapper">
-<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-<input class="visually-hidden" type="radio" id="product-2" name="toggle">
-<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+<input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+<input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+<input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
 <div class="site-wrapper">
   <header class="main-header content-wrapper">
     <nav class="main-navigation">
@@ -98,15 +98,15 @@
           <label for="product-3">Третий</label>
         </div>
         <ul class="slider-list">
-          <li class="slider-item slide" id="slide1">
+          <li class="slider-item slide slide1" id="slide1">
             <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
-          <li class="slider-item slide" id="slide2">
+          <li class="slider-item slide slide2" id="slide2">
             <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
-          <li class="slider-item slide" id="slide3">
+          <li class="slider-item slide slide3" id="slide3">
             <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
@@ -165,8 +165,6 @@
           <li class="about-us-item-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
-
-
       <section class="wrapper">
         <article>
           <div>
@@ -186,12 +184,14 @@
         </section>
       </section>
     </div>
+
     <div class="map">
+      <iframe  class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A83812990ea003240bfd79c14cd567b5dd290a040bba8c971f98503a7871fc420&amp;source=constructor" width="1200" height="426"></iframe>
       <h2 class="visually-hidden">Контактная информация</h2>
       <section class="contacts">
         <p class="address"><span class="address-small">Адрес главного офиса и офлайн-магазина:</span><span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
         <p class="contacts-phone">Для заказов по телефону: <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
-        <button class="button">Форма обратной связи</button>
+        <button class="button feedback-link">Форма обратной связи</button>
       </section>
     </div>
   </main>
@@ -273,6 +273,8 @@
   <button class="button" type="submit">Отправить</button>
   </form>
   <div class="modal-overlay"></div>
+
 </div>
+<script src="js/scripts.min.js"></script>
 </body>
 </html>
