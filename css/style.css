@@ -114,7 +114,7 @@ a {
   margin-right: -13px;
   margin-left: -13px;
   margin-bottom: 7px;
-  margin-top: -7px;
+  margin-top: -8px;
 }
 
 .menu:active {
@@ -215,7 +215,7 @@ li.menu:first-child:hover:after {
 .button-search {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
-  outline: none;
+  /*outline: none;*/
   padding: 7px 7px 4px;
   border: none;
   cursor: pointer;
@@ -226,7 +226,7 @@ li.menu:first-child:hover:after {
   background-color: rgba(255, 255, 255, 0.3);
   position: relative;
   color: white;
-  outline: none;
+  /*outline: none;*/
   border: none;
   cursor: pointer;
   padding: 7px 0 9px 46px;
@@ -434,7 +434,7 @@ li.menu:first-child:hover:after {
   padding-left: 14px;
   display: inline-block;
   vertical-align: middle;
-  outline: none;
+  /*outline: none;*/
   width: 240px;
   height: 42px;
   border: 1px solid #d3d3d2;
@@ -849,7 +849,7 @@ li.menu:first-child:hover:after {
   border: none;
   color: #ffffff;
   border-radius: 50px;
-  outline: none;
+  /*outline: none;*/
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(231,74,53)), to(rgb(242,104,67)));
   background-image: -webkit-linear-gradient(bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -o-linear-gradient(bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -1301,6 +1301,7 @@ p.address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .filter-form-sort {
@@ -1327,7 +1328,7 @@ p.address {
   background-color: rgba(255, 255, 255, 0.188);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50px;
-  outline: none;
+  /*outline: none;*/
   padding-top: 4px;
   padding-right: 6px;
   padding-bottom: 2px;
@@ -1694,6 +1695,11 @@ p.address {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  width: 7px;
+  height: 7px;
+}
+
 .range-toggle-min {
   left: 35px;
   top: 8px;
@@ -1819,7 +1825,7 @@ p.address {
   -moz-appearance: none;
   color: #ffffff;
   position: relative;
-  outline: none;
+  /*outline: none;*/
   cursor: pointer;
 }
 
@@ -1831,11 +1837,10 @@ p.address {
   color: #000000;
 }
 
-.filter-form-sort:after {
-  content: url("../img/select-arrow.svg");
+.arrow {
   position: absolute;
   right: 15px;
-  top: 23px;
+  top: 33px;
 }
 
 .sort-text {
@@ -1976,7 +1981,7 @@ p.address {
 
 .feedback-form textarea {
   resize: none;
-  outline: none;
+  /*outline: none;*/
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   padding-left: 14px;
@@ -2171,4 +2176,10 @@ p.address {
 
 .items li a:first-of-type:hover {
   color: #fff;
+}
+
+.select:hover,
+.select:hover ~ .arrow path {
+  color: #000;
+  fill: #000;
 }
