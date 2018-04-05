@@ -518,6 +518,8 @@ li.menu:first-child:hover:after {
   line-height: 30px;
 }
 
+
+
 .subscribe p {
   font-size: 16px;
   line-height: 22px;
@@ -553,7 +555,7 @@ li.menu:first-child:hover:after {
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .items img {
@@ -640,7 +642,7 @@ li.menu:first-child:hover:after {
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .filter-form label {
@@ -1016,8 +1018,10 @@ span.item-li-title {
   margin-bottom: 21px;
 }
 
-.item-button {
+.items .item-button {
   display: none;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .items li:hover:after {
@@ -1136,7 +1140,7 @@ span.item-li-title {
 }
 
 .wrapper div {
-  width: 280px;
+  width: 282px;
   margin-bottom: 83px;
 }
 
@@ -1635,6 +1639,10 @@ p.address {
   background-color: #d07058;
 }
 
+.focus a {
+  color: #ffffff;
+}
+
 /* ************************** range-controls ************************** */
 
 .filter-form-price span {
@@ -1788,8 +1796,13 @@ p.address {
 }
 
 .checkbox-label {
+  margin-right: 21px;
+}
+
+.checkbox-label:nth-of-type(3) {
   margin-right: 24px;
 }
+
 
 .checkbox-label:last-child {
   margin-right: 0;
@@ -2146,4 +2159,16 @@ p.address {
   top: 0;
   left: 0;
   border: 0;
+}
+
+.footer-link .bold-footer-link {
+  font-weight: bold;
+}
+
+.wrapper .wrapper-link {
+  font-weight: bold;
+}
+
+.items li a:first-of-type:hover {
+  color: #fff;
 }
