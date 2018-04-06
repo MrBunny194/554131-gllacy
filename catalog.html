@@ -138,6 +138,9 @@
           <option value="сначала дорогие">сначала дорогие</option>
           <option value="по жирности">по жирности</option>
         </select>
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5">
+          <path fill="#FFF" d="M4.5 5L0 0h9z"></path>
+        </svg>
       </label>
 
       <div class="filter-form-price">
@@ -147,8 +150,8 @@
             <div class="scale">
               <div class="bar"></div>
             </div>
-            <div class="range-toggle range-toggle-min"></div>
-            <div class="range-toggle range-toggle-max"></div>
+            <div class="range-toggle range-toggle-min"><label class="visually-hidden">Минимальная цена</label></div>
+            <div class="range-toggle range-toggle-max"><label class="visually-hidden">Максимальная цена</label></div>
           </div>
         </div>
       </div>
@@ -353,7 +356,7 @@
 
   <h2 class="visually-hidden">Дополнительная информация</h2>
   <ul class="footer-link">
-    <li><a href="#">Для поставщиков</a></li>
+    <li><a class="bold-footer-link" href="#">Для поставщиков</a></li>
     <li><a href="#">Наши документы</a></li>
     <li><a href="#">О производстве</a></li>
     <li><a href="#">Экологические стандарты</a></li>
