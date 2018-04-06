@@ -2175,3 +2175,10 @@ p.address {
   color: #000;
   fill: #000;
 }
+
+.items span.ruble {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-left: 5px;
+}
