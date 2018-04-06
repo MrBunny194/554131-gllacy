@@ -1012,6 +1012,7 @@ span.item-li-title {
   display: none;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .items li:hover:after {
